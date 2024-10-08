@@ -126,3 +126,80 @@
     ></small
   >
 </div>
+
+<style>
+/* General styles for better responsiveness */
+.modal-image.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.register-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.justified {
+  text-align: justify;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.form-group {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .form-group.col-6 {
+    width: 48%;
+  }
+}
+
+/* Make the input fields more mobile-friendly */
+.form-control {
+  font-size: 1rem;
+}
+
+.input-group .input-group-text {
+  font-size: 0.875rem;
+}
+
+.space-below {
+  margin-bottom: 15px;
+}
+
+.centered, .centered-small {
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .register-card {
+    padding: 15px;
+  }
+
+  .btn {
+    width: 100%; /* Full width button for mobile */
+  }
+  
+  .form-group.col-6 {
+    width: 100%;
+  }
+
+  .input-group-append .input-group-text {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+</style>
